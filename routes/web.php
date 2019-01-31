@@ -11,6 +11,11 @@
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
-});
+});*/
+
+Route::view('/','welcome')->name('welcome');//colocar login
+Route::view('/ambiente','ambiente')->name('ambiente');
+Route::view('/horarios','horarios')->name('horarios');
+Route::view('/perfil','perfil')->name('perfil');
